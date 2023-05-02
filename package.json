@@ -1,0 +1,25 @@
+{
+  "name": "sefazjs",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rimraf packages/**/dist && rimraf packages/**/tsconfig.tsbuildinfo",
+    "prepare": "npm run clean && npm run build",
+    "start:cli": " npm run start -w=@sefazjs/cli"
+  },
+  "author": "Gabriel",
+  "license": "ISC",
+  "workspaces": [
+    "packages/nfe",
+    "packages/cli"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "lerna": "^6.6.1",
+    "prettier": "^2.8.8",
+    "rimraf": "5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

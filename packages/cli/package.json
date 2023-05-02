@@ -1,0 +1,27 @@
+{
+  "name": "@sefazjs/cli",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sefaz": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@sefazjs/nfe": "1.0.0",
+    "boxen": "7.0.2",
+    "chalk": "5.2.0",
+    "meow": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/boxen": "3.0.1",
+    "@types/chalk": "2.2.0",
+    "@types/node": "18.11.9",
+    "@types/yargs": "17.0.24",
+    "typescript": "5.0.4"
+  }
+}
